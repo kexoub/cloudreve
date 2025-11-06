@@ -53,20 +53,20 @@ case $num in
  	case $jiagou in
     "1")
 
-	wget http://www.svip13.cn/sh/cloudreve/cloudreve_for_amd64.tar.gz
-	mv cloudreve_for* /usr/local/bin/cloud/
+	wget https://github.com/cloudreve/cloudreve/releases/download/4.9.2/cloudreve_4.9.2_linux_amd64.tar.gz
+	mv cloudreve_4.9.2* /usr/local/bin/cloud/
 	
     ;;
 	"2")
 	
-	wget http://www.svip13.cn/sh/cloudreve/cloudreve_for_arm.tar.gz
-	mv cloudreve_for* /usr/local/bin/cloud/
+	wget https://github.com/cloudreve/cloudreve/releases/download/4.9.2/cloudreve_4.9.2_linux_armv7.tar.gz
+	mv cloudreve_4.9.2* /usr/local/bin/cloud/
 	
 	;;
 	"3")
 
-	wget http://www.svip13.cn/sh/cloudreve/cloudreve_for_arm64.tar.gz
-	mv cloudreve_for* /usr/local/bin/cloud/
+	wget https://github.com/cloudreve/cloudreve/releases/download/4.9.2/cloudreve_4.9.2_linux_arm64.tar.gz
+	mv cloudreve_4.9.2* /usr/local/bin/cloud/
 
 	
 	;;
@@ -168,3 +168,4 @@ WantedBy=multi-user.target" > /etc/systemd/system/cloudreve.service )
 	echo -e "\033[32m 输入错误，请重新执行此脚本 \033[0m"
     ;;
 esac
+
